@@ -1,0 +1,15 @@
+﻿@*this to determine the route what page do*@ 
+@page "{id:int}"
+@model odetofood.Pages.Restraunts.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<h2>
+    @Model.Restraunt.Name
+</h2>
+<div>Location:@Model.Restraunt.location</div>
+<div>Causine:@Model.Restraunt.Type</div>
+<a asp-page="./List">All Restraunts </a>

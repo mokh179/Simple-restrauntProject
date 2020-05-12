@@ -1,0 +1,39 @@
+﻿@page "{id:int?}"
+@model odetofood.Pages.Restraunts.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit @Model.Restraunt.Name</h1>
+<form method="post">
+    <input type="hidden" asp-for="Restraunt.ID" />
+    <div class="form-group">
+        <label asp-for="Restraunt.Name"></label>
+        <input asp-for="Restraunt.Name" class="form-control"/>
+        <span class="text-danger" asp-validation-for="Restraunt.Name"></span>
+    </div> 
+    <div class="form-group">
+        <label asp-for="Restraunt.location"></label>
+        <input asp-for="Restraunt.location" class="form-control" />
+        <span class="text-danger" asp-validation-for="Restraunt.location"></span>
+    </div>   
+    <div class="form-group">
+        <label asp-for="Restraunt.Type"></label>
+        <select class="form-control" asp-for="Restraunt.Type"
+                asp-items="Model.types">
+            <span class="text-danger" asp-validation-for="Restraunt.Type"></span>
+        </select>
+    </div>
+    <div>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </div>
+    @if (Model.Message != null) 
+    {
+        <div class="alert alert-info">
+            @Model.Message 
+        </div>
+    }
+</form>
+@section Scripts{ 
+<partial name="_ValidationScriptsPartial"/>
+}

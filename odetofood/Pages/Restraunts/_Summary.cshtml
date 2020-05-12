@@ -1,0 +1,31 @@
+﻿@using odotofood.core
+@model Resturaunts
+<div class="panel panel-default">
+    <div class="panel panel-heading">
+        <h3>@Model.Name</h3>
+    </div>
+    <div class="panel panel-body">
+        <span>Location:@Model.location</span>
+        <hr />
+        <span>Cuisine:@Model.Type</span>
+    </div>
+    <div class="panel panel-footer">
+        <a class="btn btn-lg"
+           asp-page="./Details"
+           asp-route-id="@Model.ID">
+            <i class="glyphicon glyphicon-zoom-in">Detail</i>
+        </a>
+
+        <a class="btn btn-lg"
+           asp-page="./Edit"
+           asp-route-id="@Model.ID">
+            <i class="glyphicon glyphicon-zoom-in">Edit</i>
+        </a>
+
+        <a class="btn btn-lg"
+           asp-page="./Delete"
+           asp-route-id="@Model.ID">
+            <i class="glyphicon glyphicon-trash">Delete</i>
+        </a>
+    </div>
+</div>

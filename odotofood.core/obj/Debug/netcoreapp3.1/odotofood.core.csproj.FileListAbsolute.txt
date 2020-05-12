@@ -1,0 +1,9 @@
+E:\Dev\odetofood\odetofood\odotofood.core\bin\Debug\netcoreapp3.1\odotofood.core.deps.json
+E:\Dev\odetofood\odetofood\odotofood.core\bin\Debug\netcoreapp3.1\odotofood.core.dll
+E:\Dev\odetofood\odetofood\odotofood.core\bin\Debug\netcoreapp3.1\odotofood.core.pdb
+E:\Dev\odetofood\odetofood\odotofood.core\obj\Debug\netcoreapp3.1\odotofood.core.csproj.CoreCompileInputs.cache
+E:\Dev\odetofood\odetofood\odotofood.core\obj\Debug\netcoreapp3.1\odotofood.core.AssemblyInfoInputs.cache
+E:\Dev\odetofood\odetofood\odotofood.core\obj\Debug\netcoreapp3.1\odotofood.core.AssemblyInfo.cs
+E:\Dev\odetofood\odetofood\odotofood.core\obj\Debug\netcoreapp3.1\odotofood.core.dll
+E:\Dev\odetofood\odetofood\odotofood.core\obj\Debug\netcoreapp3.1\odotofood.core.pdb
+E:\Dev\odetofood\odetofood\odotofood.core\obj\Debug\netcoreapp3.1\odotofood.core.csprojAssemblyReference.cache

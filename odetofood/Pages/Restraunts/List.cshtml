@@ -1,0 +1,61 @@
+﻿@page
+@model odetofood.Pages.Restraunts.ListModel
+@{
+
+}
+
+<!DOCTYPE html>
+
+<h1>Restraunts</h1>
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" placeholder="Name" asp-for="SearchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-group">
+                    <i class="glyphicon glyphicon-search">Search</i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+@*<table class="table">
+    @foreach (var item in Model.AllRest)
+    {
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.location</td>
+        <td>@item.Type</td>
+        <td>
+            <a class="btn btn-lg"
+               asp-page="./Details"
+               asp-route-id="@item.ID">
+                <i class="glyphicon glyphicon-zoom-in">Detail</i>
+            </a>
+        
+            <a class="btn btn-lg"
+               asp-page="./Edit"
+               asp-route-id="@item.ID">
+                <i class="glyphicon glyphicon-zoom-in">Edit</i>
+            </a>
+        
+            <a class="btn btn-lg"
+               asp-page="./Delete"
+               asp-route-id="@item.ID">
+                <i class="glyphicon glyphicon-trash">Delete</i>
+            </a>
+        </td>
+
+    </tr>
+    }
+</table>*@
+@foreach (var item in Model.AllRest)
+{
+    <partial name="_Summary" model="item"/>
+}
+<a asp-page=".\Edit" class="btn btn-primary">Add</a>
+@section footer{
+    <div>@Model.Message</div>
+}
+
+
